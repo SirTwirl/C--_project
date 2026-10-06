@@ -1,0 +1,32 @@
+Kontekst dziedzinowy: serwis informatyczny
+
+Struktura danych wejściowych zgłoszenia:
+	typ_urządzenia, String
+	marka_urządzenia, String
+	typ_usługi,	
+	termin, int
+
+Struktura danych wejściowych pracownika:
+	ID_pracownika, INT
+	specjalizacja, STRING
+	aktualny_stan, {wolny, zajęty}
+
+Struktura danych usługi:
+	ID_usługi
+	nazwa
+	kategoria
+	wymagana_specjalizacja
+	domyslny_czas
+	priorytet
+
+Struktura zgłoszenia:
+	ID_zgłoszenia
+	ID_usługi 
+	ID_pracownika 
+	typ_urządzenia,	String
+	marka_urządzenia, String
+	czas_wejscia, int
+	termin, int
+	
+	
+	

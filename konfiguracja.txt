@@ -1,0 +1,55 @@
+
+# --- PARAMETRY SYMULACJI ---
+
+# ALGORYTM: 1 = AlgorytmA (FIFO / EDF), 2 = AlgorytmB (Priorytetowy)
+
+ALGORYTM = 1
+MAX_CZAS_SYMULACJI = 480
+
+# --- LISTA PRACOWNIKÓW ---
+
+# Format: ID_pracownika; Specjalizacja
+
+[PRACOWNICY]
+1;JuniorSoftware
+2;TechnikHardware
+3;TechnikHardware
+4;ElektronikLutowanie
+5;TechnikMobile
+6;OdzyskiwanieDanych
+7;InzynierSieciIServerow
+
+# --- KATALOG USŁUG ---
+
+# Format: ID_usługi;Nazwa;Kategoria;WymaganaSpecjalizacja;DomyślnyCzas;Priorytet
+
+[USLUGI]
+USL_001;Diagnostyka wstępna;Oprogramowanie;JuniorSoftware;30;1
+USL_002;Instalacja OS + sterowniki;Oprogramowanie;JuniorSoftware;60;1
+USL_003;Odwirusowywanie i optymalizacja;Oprogramowanie;JuniorSoftware;90;1
+USL_004;Konfiguracja kopii zapasowych;Oprogramowanie;JuniorSoftware;45;1
+USL_005;Czyszczenie i wymiana past;Sprzęt PC/Laptop;TechnikHardware;60;1
+USL_006;Wymiana dysku na SSD + migracja;Sprzęt PC/Laptop;TechnikHardware;90;2
+USL_007;Rozbudowa pamięci RAM;Sprzęt PC/Laptop;TechnikHardware;15;1
+USL_008;Wymiana matrycy w laptopie;Sprzęt PC/Laptop;TechnikHardware;60;2
+USL_009;Wymiana klawiatury w laptopie;Sprzęt PC/Laptop;TechnikHardware;75;2
+USL_010;Wymiana obudowy / zawiasów;Sprzęt PC/Laptop;TechnikHardware;120;2
+USL_011;Montaż zestawu PC z testami;Sprzęt PC/Laptop;TechnikHardware;150;2
+USL_012;Wymiana baterii wbudowanej;Sprzęt PC/Laptop;TechnikHardware;30;1
+USL_013;Lutowanie gniazda zasilania DC;Elektronika SMD/BGA;ElektronikLutowanie;90;2
+USL_014;Wymiana portów (USB / HDMI / Audio);Elektronika SMD/BGA;ElektronikLutowanie;120;2
+USL_015;Naprawa zwarcia w sekcji zasilania MB;Elektronika SMD/BGA;ElektronikLutowanie;240;3
+USL_016;Programowanie kości BIOS/KBC;Elektronika SMD/BGA;ElektronikLutowanie;90;3
+USL_017;Naprawa płyty głównej po zalaniu;Elektronika SMD/BGA;ElektronikLutowanie;180;3
+USL_018;Reballing / wymiana układu BGA;Elektronika SMD/BGA;ElektronikLutowanie;300;3
+USL_019;Wymiana wyświetlacza w smartfonie;Urządzenia Mobile;TechnikMobile;90;2
+USL_020;Wymiana baterii w telefonie/tablecie;Urządzenia Mobile;TechnikMobile;45;1
+USL_021;Wymiana portu ładowania w telefonie;Urządzenia Mobile;TechnikMobile;60;2
+USL_022;Osuszanie i czyszczenie smartfona;Urządzenia Mobile;TechnikMobile;120;3
+USL_023;Odzysk danych: logiczny;Odzyskiwanie Danych;OdzyskiwanieDanych;180;2
+USL_024;Odzysk danych: uszkodzony dysk HDD;Odzyskiwanie Danych;OdzyskiwanieDanych;480;3
+USL_025;Odzysk danych: uszkodzony pendrive/SSD;Odzyskiwanie Danych;OdzyskiwanieDanych;360;3
+USL_026;Odzysk danych: awaria macierzy RAID;Odzyskiwanie Danych;OdzyskiwanieDanych;600;4
+USL_027;Konfiguracja routera / switcha;Sieci i Serwery;InzynierSieciIServerow;60;2
+USL_028;Diagnostyka i naprawa serwera NAS;Sieci i Serwery;InzynierSieciIServerow;180;3
+USL_029;Naprawa zasilania / dysku w RACK;Sieci i Serwery;InzynierSieciIServerow;60;4
