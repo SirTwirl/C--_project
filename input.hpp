@@ -11,27 +11,27 @@ struct UslugaInfo {
     string nazwa;
     string kategoria;
     string specjalizacja;
-    int czas;
-    int priorytet;
+    int czas{0};
+    int priorytet{1};
 };
 
 struct PracownikInfo {
-    int id;
+    int id{0};
     string specjalizacja;
 };
 
 struct ZgloszenieInfo {
-    int idZgloszenia;
+    int idZgloszenia{0};
     string idUslugi;
     string typUrzadzenia;
     string marka;
-    int czasWejscia;
-    int termin;
+    int czasWejscia{0};
+    int termin{0};
 };
 
 struct KonfiguracjaData {
-    int algorytm = 1;
-    int maxCzas = 480;
+    int algorytm{1};
+    int maxCzas{480};
     vector<PracownikInfo> pracownicy;
     vector<UslugaInfo> uslugi;
 };
@@ -39,8 +39,7 @@ struct KonfiguracjaData {
 class Input {
 public:
     static bool wczytajKonfiguracje(const string& sciezka, KonfiguracjaData& outKonfig);
-
     static bool wczytajZgloszenia(const string& sciezka, vector<ZgloszenieInfo>& outZgloszenia);
 };
 
-#endif // INPUT_HPP
+#endif

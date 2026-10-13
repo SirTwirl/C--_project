@@ -1,0 +1,197 @@
+========================================================================================
+               ZESTAWIENIE POROWNAWCZE STRATEGII OBSLUGI ZGLOSZEN                       
+                        Badanie Eksperymentalne P1                                      
+========================================================================================
+
+================================================================================
+                 RAPORT Z SYMULACJI SYSTEMU OBSLUGI ZGLOSZEN                    
+                      Dziedzina: Serwis Informatyczny                           
+================================================================================
+
+STRATEGIA: Strategia A: FIFO / FCFS (queue)
+Horyzont czasowy symulacji: 480 minut
+
+--- BILANS ZGLOSZEN ---
+Laczna liczba zgloszen w systemie: 9814
+Obsluzone zgloszenia (sukces):     42
+Zgloszenia w toku (na koniec):     7
+Zgloszenia nieobsluzone (kolejka): 9765
+
+--- STATYSTYKI CZASU OCZEKIWANIA (W MINUTACH) ---
+Sredni czas oczekiwania (mu):      147.10 min
+Odchylenie standardowe (sigma):    103.08 min
+Minimalny czas oczekiwania:        0 min
+Maksymalny czas oczekiwania:       360 min
+Mediana (p50):                     151.00 min
+Percentyl 90 (p90):                286.40 min
+Percentyl 95 (p95):                314.05 min
+Percentyl 99 (p99):                349.75 min
+
+--- STATYSTYKI TERMINOWOSCI I SLA ---
+Sredni czas realizacji uslugi:     68.57 min
+Obsluzone w terminie (SLA OK):     29
+Obsluzone po terminie (SLA FAIL):  13
+Wskaznik dotrzymania SLA:          69.05 %
+Srednie spoznienie spoznionych:    82.54 min
+Maksymalne spoznienie:             165 min
+
+--- UTYLIZACJA ZESPOLU SERWISOWEGO ---
+Srednie wykorzystanie pracownikow: 85.71 %
+
+ID    Specjalizacja               Obsluzonych   Czas pracy      Wykorzystanie   
+--------------------------------------------------------------------------------
+1     JuniorSoftware              7             420 min         87 %            
+2     TechnikHardware             8             420 min         87 %            
+3     TechnikHardware             12            420 min         87 %            
+4     ElektronikLutowanie         3             390 min         81 %            
+5     TechnikMobile               6             450 min         93 %            
+6     OdzyskiwanieDanych          1             360 min         75 %            
+7     InzynierSieciIServerow      5             420 min         87 %            
+
+
+========================================================================================
+
+================================================================================
+                 RAPORT Z SYMULACJI SYSTEMU OBSLUGI ZGLOSZEN                    
+                      Dziedzina: Serwis Informatyczny                           
+================================================================================
+
+STRATEGIA: Strategia B: Highest Priority First (priority_queue)
+Horyzont czasowy symulacji: 480 minut
+
+--- BILANS ZGLOSZEN ---
+Laczna liczba zgloszen w systemie: 9800
+Obsluzone zgloszenia (sukces):     28
+Zgloszenia w toku (na koniec):     7
+Zgloszenia nieobsluzone (kolejka): 9765
+
+--- STATYSTYKI CZASU OCZEKIWANIA (W MINUTACH) ---
+Sredni czas oczekiwania (mu):      94.11 min
+Odchylenie standardowe (sigma):    82.84 min
+Minimalny czas oczekiwania:        0 min
+Maksymalny czas oczekiwania:       287 min
+Mediana (p50):                     91.50 min
+Percentyl 90 (p90):                192.90 min
+Percentyl 95 (p95):                244.40 min
+Percentyl 99 (p99):                282.68 min
+
+--- STATYSTYKI TERMINOWOSCI I SLA ---
+Sredni czas realizacji uslugi:     91.61 min
+Obsluzone w terminie (SLA OK):     22
+Obsluzone po terminie (SLA FAIL):  6
+Wskaznik dotrzymania SLA:          78.57 %
+Srednie spoznienie spoznionych:    49.17 min
+Maksymalne spoznienie:             90 min
+
+--- UTYLIZACJA ZESPOLU SERWISOWEGO ---
+Srednie wykorzystanie pracownikow: 76.34 %
+
+ID    Specjalizacja               Obsluzonych   Czas pracy      Wykorzystanie   
+--------------------------------------------------------------------------------
+1     JuniorSoftware              7             420 min         87 %            
+2     TechnikHardware             4             375 min         78 %            
+3     TechnikHardware             7             405 min         84 %            
+4     ElektronikLutowanie         2             300 min         62 %            
+5     TechnikMobile               4             405 min         84 %            
+6     OdzyskiwanieDanych          1             360 min         75 %            
+7     InzynierSieciIServerow      3             300 min         62 %            
+
+
+========================================================================================
+
+================================================================================
+                 RAPORT Z SYMULACJI SYSTEMU OBSLUGI ZGLOSZEN                    
+                      Dziedzina: Serwis Informatyczny                           
+================================================================================
+
+STRATEGIA: Strategia C: Earliest Deadline First (EDF, priority_queue)
+Horyzont czasowy symulacji: 480 minut
+
+--- BILANS ZGLOSZEN ---
+Laczna liczba zgloszen w systemie: 9810
+Obsluzone zgloszenia (sukces):     38
+Zgloszenia w toku (na koniec):     7
+Zgloszenia nieobsluzone (kolejka): 9765
+
+--- STATYSTYKI CZASU OCZEKIWANIA (W MINUTACH) ---
+Sredni czas oczekiwania (mu):      122.05 min
+Odchylenie standardowe (sigma):    102.26 min
+Minimalny czas oczekiwania:        0 min
+Maksymalny czas oczekiwania:       361 min
+Mediana (p50):                     101.00 min
+Percentyl 90 (p90):                270.30 min
+Percentyl 95 (p95):                289.25 min
+Percentyl 99 (p99):                345.46 min
+
+--- STATYSTYKI TERMINOWOSCI I SLA ---
+Sredni czas realizacji uslugi:     75.39 min
+Obsluzone w terminie (SLA OK):     23
+Obsluzone po terminie (SLA FAIL):  15
+Wskaznik dotrzymania SLA:          60.53 %
+Srednie spoznienie spoznionych:    52.87 min
+Maksymalne spoznienie:             132 min
+
+--- UTYLIZACJA ZESPOLU SERWISOWEGO ---
+Srednie wykorzystanie pracownikow: 85.27 %
+
+ID    Specjalizacja               Obsluzonych   Czas pracy      Wykorzystanie   
+--------------------------------------------------------------------------------
+1     JuniorSoftware              8             450 min         93 %            
+2     TechnikHardware             6             420 min         87 %            
+3     TechnikHardware             9             420 min         87 %            
+4     ElektronikLutowanie         4             390 min         81 %            
+5     TechnikMobile               5             405 min         84 %            
+6     OdzyskiwanieDanych          1             360 min         75 %            
+7     InzynierSieciIServerow      5             420 min         87 %            
+
+
+========================================================================================
+
+================================================================================
+                 RAPORT Z SYMULACJI SYSTEMU OBSLUGI ZGLOSZEN                    
+                      Dziedzina: Serwis Informatyczny                           
+================================================================================
+
+STRATEGIA: Strategia D: HPF z Aging (Odpornosc na glodzenie / Starvation-free)
+Horyzont czasowy symulacji: 480 minut
+
+--- BILANS ZGLOSZEN ---
+Laczna liczba zgloszen w systemie: 9814
+Obsluzone zgloszenia (sukces):     42
+Zgloszenia w toku (na koniec):     7
+Zgloszenia nieobsluzone (kolejka): 9765
+
+--- STATYSTYKI CZASU OCZEKIWANIA (W MINUTACH) ---
+Sredni czas oczekiwania (mu):      155.24 min
+Odchylenie standardowe (sigma):    108.25 min
+Minimalny czas oczekiwania:        0 min
+Maksymalny czas oczekiwania:       360 min
+Mediana (p50):                     152.50 min
+Percentyl 90 (p90):                287.00 min
+Percentyl 95 (p95):                314.20 min
+Percentyl 99 (p99):                349.75 min
+
+--- STATYSTYKI TERMINOWOSCI I SLA ---
+Sredni czas realizacji uslugi:     68.57 min
+Obsluzone w terminie (SLA OK):     29
+Obsluzone po terminie (SLA FAIL):  13
+Wskaznik dotrzymania SLA:          69.05 %
+Srednie spoznienie spoznionych:    81.00 min
+Maksymalne spoznienie:             165 min
+
+--- UTYLIZACJA ZESPOLU SERWISOWEGO ---
+Srednie wykorzystanie pracownikow: 85.71 %
+
+ID    Specjalizacja               Obsluzonych   Czas pracy      Wykorzystanie   
+--------------------------------------------------------------------------------
+1     JuniorSoftware              7             420 min         87 %            
+2     TechnikHardware             9             420 min         87 %            
+3     TechnikHardware             11            420 min         87 %            
+4     ElektronikLutowanie         3             390 min         81 %            
+5     TechnikMobile               6             450 min         93 %            
+6     OdzyskiwanieDanych          1             360 min         75 %            
+7     InzynierSieciIServerow      5             420 min         87 %            
+
+
+========================================================================================
+

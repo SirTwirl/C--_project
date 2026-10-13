@@ -1,0 +1,5 @@
+Strategia;Lacznie;Obsluzone;WToku;Nieobsluzone;SredniCzasOczek;OdchylenieStd;MinOczek;MaxOczek;P50;P90;P95;P99;SredniCzasRealizacji;SLA_Procent;SrednieSpoznienie;MaxSpoznienie;SredniaUtylizacja
+Strategia A: FIFO / FCFS (queue);9814;42;7;9765;147.095;103.082;0;360;151;286.4;314.05;349.75;68.5714;69.0476;82.5385;165;85.7143
+Strategia B: Highest Priority First (priority_queue);9800;28;7;9765;94.1071;82.8434;0;287;91.5;192.9;244.4;282.68;91.6071;78.5714;49.1667;90;76.3393
+Strategia C: Earliest Deadline First (EDF, priority_queue);9810;38;7;9765;122.053;102.258;0;361;101;270.3;289.25;345.46;75.3947;60.5263;52.8667;132;85.2679
+Strategia D: HPF z Aging (Odpornosc na glodzenie / Starvation-free);9814;42;7;9765;155.238;108.248;0;360;152.5;287;314.2;349.75;68.5714;69.0476;81;165;85.7143

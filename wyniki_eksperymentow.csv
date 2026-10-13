@@ -1,0 +1,21 @@
+Strategia;Lacznie;Obsluzone;WToku;Nieobsluzone;SredniCzasOczek;OdchylenieStd;MinOczek;MaxOczek;P50;P90;P95;P99;SredniCzasRealizacji;SLA_Procent;SrednieSpoznienie;MaxSpoznienie;SredniaUtylizacja
+Strategia A: FIFO / FCFS (queue);20;15;5;0;7.33333;20.4015;0;80;0;17;41.5;72.3;64;100;0;0;28.5714
+Strategia B: Highest Priority First (priority_queue);20;15;5;0;7.33333;20.4015;0;80;0;17;41.5;72.3;64;100;0;0;28.5714
+Strategia C: Earliest Deadline First (EDF, priority_queue);20;15;5;0;7.33333;20.4015;0;80;0;17;41.5;72.3;64;100;0;0;28.5714
+Strategia D: HPF z Aging (Odpornosc na glodzenie / Starvation-free);20;15;5;0;7.33333;20.4015;0;80;0;17;41.5;72.3;64;100;0;0;28.5714
+Strategia A: FIFO / FCFS (queue);42;35;7;0;59;57.6536;0;188;41;137.4;172.3;182.9;70.7143;94.2857;33.5;61;73.6607
+Strategia B: Highest Priority First (priority_queue);39;32;7;0;50.5938;52.7203;0;188;33;128;135.3;174.05;74.0625;93.75;11;16;70.5357
+Strategia C: Earliest Deadline First (EDF, priority_queue);40;33;7;0;48.9091;58.3819;0;254;27;105.8;153.8;232.88;72.7273;100;0;0;71.4286
+Strategia D: HPF z Aging (Odpornosc na glodzenie / Starvation-free);42;35;7;0;60.2571;57.9716;0;188;49;137.4;172.3;182.9;70.7143;94.2857;33.5;61;73.6607
+Strategia A: FIFO / FCFS (queue);44;37;7;0;141.216;111.267;0;330;144;296;308.6;323.16;71.7568;72.973;74.6;148;79.0179
+Strategia B: Highest Priority First (priority_queue);37;30;7;0;105.433;100.443;0;330;90.5;265.8;297.95;324.49;81.5;70;63;120;72.7679
+Strategia C: Earliest Deadline First (EDF, priority_queue);46;39;7;0;128.564;113.802;0;341;90;295.8;318.5;334.16;73.4615;58.9744;61.4375;175;85.2679
+Strategia D: HPF z Aging (Odpornosc na glodzenie / Starvation-free);43;36;7;0;142.028;115.858;0;333;131;317;327.75;331.95;72.0833;72.2222;74.3;148;77.2321
+Strategia A: FIFO / FCFS (queue);43;36;7;0;105.833;94.197;0;301;90;245;256.75;291.55;57.5;83.3333;67;154;61.6071
+Strategia B: Highest Priority First (priority_queue);37;30;7;0;98.1667;95.483;0;301;80;246.5;263.65;293.17;68.5;86.6667;61.5;116;61.1607
+Strategia C: Earliest Deadline First (EDF, priority_queue);40;33;7;0;98.8788;98.7218;0;300;72;240.8;282.6;295.2;64.5455;75.7576;58.875;127;63.3929
+Strategia D: HPF z Aging (Odpornosc na glodzenie / Starvation-free);41;34;7;0;101.382;90.7223;0;301;98.5;236.7;259.05;292.09;60;82.3529;55.5;130;60.7143
+Strategia A: FIFO / FCFS (queue);1736;1729;7;0;8093.3;4743.52;0;18300;8106;14726;15589.2;16605.1;80.7172;1.50376;7986.55;18210;99.6857
+Strategia B: Highest Priority First (priority_queue);1302;1295;7;0;6574.12;4696.54;0;17848;6214;13409.8;14535.2;15988.6;107.606;3.24324;6609.45;17783;99.5357
+Strategia C: Earliest Deadline First (EDF, priority_queue);1740;1733;7;0;8105.92;4755.34;0;18109;8060;14708;15668.6;16498.4;80.1933;1.03866;7963.38;18018;99.2679
+Strategia D: HPF z Aging (Odpornosc na glodzenie / Starvation-free);1734;1727;7;0;8094.55;4742.14;0;18391;8106;14731.2;15591.7;16596.2;80.7412;1.4476;7982.87;18233;99.6
